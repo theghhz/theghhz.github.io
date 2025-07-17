@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Baixando...</title>
+    <script>
+      window.onload = function () {
+        // Inicia o download
+        window.location.href = "/downloads/autotudov2.exe";
+
+        // (Opcional) Tenta fechar a aba depois de alguns segundos
+        setTimeout(() => {
+          window.open('', '_self').close();
+        }, 3000);
+      };
+    </script>
+  </head>
+  <body>
+    <p>Seu download está começando...</p>
+  </body>
+</html>
