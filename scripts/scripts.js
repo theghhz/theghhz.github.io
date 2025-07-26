@@ -7,9 +7,9 @@ function baixarCurriculo() {
   document.body.removeChild(link);
 }
 
-function iniciarDownload() {
+function baixarMacroMu() {
     const link = document.createElement('a');
-    link.href = '/downloads/autotudov2.exe';
+    link.href = '../downloads/autotudov2.exe';
     link.download = 'autotudov2.exe';
     document.body.appendChild(link);
     link.click();
