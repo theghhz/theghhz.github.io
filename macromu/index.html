@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Baixando...</title>
-    <script>
-      window.onload = function () {
-        // Inicia o download
-        window.location.href = "/downloads/autotudov2.exe";
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download - MacroMu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="scripts/scripts.js"></script>
 
-        // (Opcional) Tenta fechar a aba depois de alguns segundos
-        setTimeout(() => {
-          window.open('', '_self').close();
-        }, 3000);
-      };
-    </script>
-  </head>
-  <body>
-    <p>Seu download está começando...</p>
-  </body>
+</head>
+<body>
+
+<div class="mensagem">
+  <p>Seu download está começando...</p>
+  <p id="statusDownload"></p>
+</div>
+
+<script>
+  window.onload = () => {
+    iniciarDownload();
+  };
+</script>
+
+</body>
 </html>
